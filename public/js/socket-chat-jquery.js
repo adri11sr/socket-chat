@@ -14,11 +14,12 @@ var sala = params.get('sala');
 function renderizarUsuarios(personas) {
 
     console.log(personas);
+    console.log(sala);
 
     var html = '';
 
     html += '<li>';
-    html += '<a href="javascript:void(0)" class="active"> Chat de <span> ' + params.get('sala') + '</span></a>';
+    html += '<a href="javascript:void(0)" class="active"> Chat de <span> ' + sala + '</span></a>';
     html += '</li>';
 
     for (var i = 0; i < personas.length; i++) {
